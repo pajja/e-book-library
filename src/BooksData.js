@@ -21,7 +21,13 @@ function BooksData() {
   }, []);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message}</p>;
+  if (error)
+    return (
+      <div>
+        <p>Error: {error.message}</p>
+        <p>It looks like you're not connected to the server</p>
+      </div>
+    );
 
   return (
     <div>

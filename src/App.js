@@ -12,7 +12,9 @@ const book1 = {
 function App() {
   return (
     <div>
-      <div>E-Book-Library</div>
+      <div>
+        <h1>E-Book-Library</h1>
+      </div>
       <div>{/* <BookItem book={BooksData.books} /> */}</div>
       <div>
         <BooksData />
